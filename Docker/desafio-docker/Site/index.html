@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <title>Colocar texto a esquerda</title>
+  <style>
+    .move-right {
+      text-align: right;
+    }
+  </style>
+
+  <title>Modo Escuro</title>
+  <style>
+    body {
+      background-color: #fff; /* cor de fundo padrão */
+      color: #000; /* cor do texto padrão */
+      transition: background-color 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .switch {
+      margin-top: auto;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: relative;
+      cursor: pointer;
+      display: block;
+      width: 60px;
+      height: 34px;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 34px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      top: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 50%;
+    }
+
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+
+    /* Estilize a aparência do interruptor quando estiver no modo escuro */
+    .switch.dark-mode input:checked + .slider {
+      background-color: #444;
+    }
+
+    .switch.dark-mode input:checked + .slider:before {
+      background-color: #fff;
+    }
+  </style>
+</head>
+</html>
+
+<body>
+  <div class="switch">
+    <input type="checkbox" id="darkModeSwitch" onchange="toggleDarkMode()">
+    <label class="slider" for="darkModeSwitch"></label>
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      var body = document.body;
+      var darkModeSwitch = document.getElementById("darkModeSwitch");
+      body.classList.toggle("dark-mode", darkModeSwitch.checked);
+    }
+  </script>
+</body>
+
+</html>
+  <style>
+    body {
+      background-color: #fff; /* cor de fundo padrão */
+      color: #000; /* cor do texto padrão */
+    }
+
+    .dark-mode {
+      background-color: #222; /* cor de fundo para o modo escuro */
+      color: #fff; /* cor do texto para o modo escuro */
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    function toggleDarkMode() {
+      var body = document.body;
+      body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+<html>
+
+<title>Meu Site de Vendas</title>
+<style>
+  body {
+    background-color: #fff; /* cor de fundo padrão */
+    color: #000; /* cor do texto padrão */
+  }
+
+  h1 {
+    margin-left: 20px; /* Recuo à esquerda para o h1 */
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around; /* Espaçamento horizontal uniforme */
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-right: 10px; /* Espaçamento entre os itens de navegação */
+  }
+</style>
+</head>
+<body>
+
+<h1>Bem-vindo ao Meu Site de Vendas</h1>
+<nav>
+  <ul>
+    <li><a href="#">Início</a></li>
+    <li><a href="#">Produtos</a></li>
+    <li><a href="#">Carrinho</a></li>
+    <li><a href="#">Contato</a></li>
+  </ul>
+</nav>
+</body>
+
+  <main>
+ 
+    <section>
+      <h2>Produtos em Destaque</h2>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/41Od-tkJoDL._AC_SY500_.jpg" alt="Tênis Bota Air Jordan Premium">
+        <h3>Tênis Bota Air Jordan Premium</h3>
+        <p>O Tênis Bota Air Jordan Premium é a escolha perfeita para quem busca um calçado confortável e estiloso. Ele é fabricado com materiais de alta qualidade, garantindo durabilidade e resistência. Com solado resistente, ele é ideal para usar em várias ocasiões, desde um passeio no parque até uma caminhada na natureza. O design moderno e elegante do Tênis Bota Air Jordan Premium é outro destaque. Ele possui linhas clean e cores sóbrias, combinando facilmente com qualquer look. Além disso, ele conta com tecnologia de amortecimento na parte traseira, oferecendo ainda mais conforto e estabilidade aos pés. Se você valoriza conforto e estilo, não perca mais tempo e adquira já o seu Tênis Bota Air Jordan Premium. Com ele, você terá um calçado versátil e de qualidade, que vai acompanhá-lo em todas as suas aventuras.</p>
+        <button>Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="product">
+        <img src="https://a-static.mlcdn.com.br/800x560/tenis-qix-smash-qix2102/ultimatoskateboard1/15822244302/d07a9c08913b9468ce3dd7ad04d5a5c0.jpeg" alt="Tênis QIX Smash">
+        <h3>Tênis QIX Smash</h3>
+        <p>Cabedal construído em material sintético com detalhes em relevo nas laterais. Forro em nylon com espuma de poliuretano no calcanhar. Logotipo da marca na lateral, língua e palmilha. Palmilha em EVA antibacteriana. Solado de borracha blaqueado (costurado no solado tornando assim muito mais seguro e blindado o solado com o cabedal, para não descolar nos lugares de maior atrito).
+        Com ranhuras e sulcos no solado garantindo uma melhor aderência.</p>
+        <button>Adicionar ao Carrinho</button>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="move-right">&copy; 2023 Meu Site de Vendas. Todos os direitos reservados.</div>
+  </footer>
+</html>
