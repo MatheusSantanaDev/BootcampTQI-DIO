@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Numbers",
+            "request": "launch",
+            "mainClass": "Numbers",
+            "projectName": "Java_104d7cd0"
+        },
+        {
+            "type": "java",
+            "name": "Grade",
+            "request": "launch",
+            "mainClass": "Grade",
+            "projectName": "Java_104d7cd0"
+        },
+        {
+            "type": "java",
+            "name": "ReadStudent",
+            "request": "launch",
+            "mainClass": "ReadStudent",
+            "projectName": "Java_104d7cd0"
+        },
+        {
+            "type": "java",
+            "name": "ReadStudent",
+            "request": "launch",
+            "mainClass": "SmartTV.ReadStudent",
+            "projectName": "Java_104d7cd0"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"

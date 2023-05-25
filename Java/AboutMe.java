@@ -2,6 +2,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class AboutMe {
+    
     public static void main(String[] args) {
         /* 
         String name = args[0];
@@ -9,6 +10,7 @@ public class AboutMe {
         int age = Integer.valueOf(args[2]);
         double height = Double.valueOf(args[3]);
         */
+        
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
         System.out.println("Enter your name: ");
