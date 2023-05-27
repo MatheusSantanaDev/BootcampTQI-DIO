@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Management",
+            "request": "launch",
+            "mainClass": "Company.Management",
+            "projectName": "Java_104d7cd0"
+        },
+        {
+            "type": "java",
+            "name": "Garage",
+            "request": "launch",
+            "mainClass": "Car.Garage",
+            "projectName": "Java_104d7cd0"
+        },
+        {
+            "type": "java",
+            "name": "Matrix",
+            "request": "launch",
+            "mainClass": "Matrix",
+            "projectName": "Java_104d7cd0"
+        },
+        {
+            "type": "java",
+            "name": "Consonants",
+            "request": "launch",
+            "mainClass": "Consonants",
+            "projectName": "Java_104d7cd0"
+        },
+        {
+            "type": "java",
+            "name": "ReverseOrder",
+            "request": "launch",
+            "mainClass": "ReverseOrder",
+            "projectName": "Java_104d7cd0"
+        },
+        {
+            "type": "java",
+            "name": "EvenOdd",
+            "request": "launch",
+            "mainClass": "EvenOdd",
+            "projectName": "Java_104d7cd0"
+        },
+        {
+            "type": "java",
             "name": "Numbers",
             "request": "launch",
             "mainClass": "Numbers",
