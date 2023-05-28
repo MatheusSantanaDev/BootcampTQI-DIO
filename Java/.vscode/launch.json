@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StreamAPI",
+            "request": "launch",
+            "mainClass": "CollectionsFramework.StreamAPI",
+            "projectName": "Java_104d7cd0"
+        },
+        {
+            "type": "java",
+            "name": "ExampleOne",
+            "request": "launch",
+            "mainClass": "CollectionsFramework.Map.ExampleOne",
+            "projectName": "Java_104d7cd0"
+        },
+        {
+            "type": "java",
+            "name": "ExampleTwo",
+            "request": "launch",
+            "mainClass": "CollectionsFramework.Set.ExampleTwo",
+            "projectName": "Java_104d7cd0"
+        },
+        {
+            "type": "java",
+            "name": "ExampleOne",
+            "request": "launch",
+            "mainClass": "CollectionsFramework.Set.ExampleOne",
+            "projectName": "Java_104d7cd0"
+        },
+        {
+            "type": "java",
+            "name": "ExampleOne",
+            "request": "launch",
+            "mainClass": "CollectionsFramework.List.ExampleOne",
+            "projectName": "Java_104d7cd0"
+        },
+        {
+            "type": "java",
+            "name": "ExampleTwo",
+            "request": "launch",
+            "mainClass": "CollectionsFramework.List.ExampleTwo",
+            "projectName": "Java_104d7cd0"
+        },
+        {
+            "type": "java",
+            "name": "ExemploOne",
+            "request": "launch",
+            "mainClass": "CollectionsFramework.List.ExemploOne",
+            "projectName": "Java_104d7cd0"
+        },
+        {
+            "type": "java",
             "name": "Management",
             "request": "launch",
             "mainClass": "Company.Management",
