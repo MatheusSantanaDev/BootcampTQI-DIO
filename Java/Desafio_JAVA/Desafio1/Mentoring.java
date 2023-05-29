@@ -1,29 +1,20 @@
+package Desafio_JAVA.Desafio1;
 
 import java.time.LocalDate;
 
-class Mentoring{
-   private String tittle;
-   private String describe;
+class Mentoring extends Content{
+
    private LocalDate date;
 
-    public String getTittle() {
-        return tittle;
-    }
+   public double calculateXP(){
+       return defaultXP = 20d;
+   }
+   public Mentoring() {
 
-    public String getDescribe() {
-        return describe;
-    }
+   }
 
     public LocalDate getDate() {
         return date;
-    }
-
-    public void setTittle(String tittle) {
-        this.tittle = tittle;
-    }
-
-    public void setDescribe(String describe) {
-        this.describe = describe;
     }
 
     public void setDate(LocalDate date) {
@@ -33,8 +24,8 @@ class Mentoring{
     @Override
     public String toString() {
         return "{" +
-                "tittle='" + tittle + '\'' +
-                ", describe='" + describe + '\'' +
+                "tittle='" + getTittle() + '\'' +
+                ", describe='" + getDescribe() + '\'' +
                 ", date=" + date +
                 '}';
     }

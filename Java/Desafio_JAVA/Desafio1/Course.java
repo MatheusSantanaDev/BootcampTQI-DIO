@@ -1,27 +1,17 @@
+package Desafio_JAVA.Desafio1;
 
-class Course{
-    private String tittle;
-    private String describe;
+class Course extends Content{
     private int workload;
 
-    public String getTittle() {
-        return tittle;
+    public double calculateXP(){
+        return defaultXP*workload;
     }
+    public Course() {
 
-    public String getDescribe() {
-        return describe;
     }
 
     public int getWorkload() {
         return workload;
-    }
-
-    public void setTittle(String tittle) {
-        this.tittle = tittle;
-    }
-
-    public void setDescribe(String describe) {
-        this.describe = describe;
     }
 
     public void setWorkload(int workload) {
@@ -31,8 +21,8 @@ class Course{
     @Override
     public String toString() {
         return "{" +
-                "tittle='" + tittle + '\'' +
-                ", describe='" + describe + '\'' +
+                "tittle='" + getTittle() + '\'' +
+                ", describe='" + getDescribe() + '\'' +
                 ", workload=" + workload +
                 '}';
     }
