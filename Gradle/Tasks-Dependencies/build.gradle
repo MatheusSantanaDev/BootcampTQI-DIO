@@ -1,0 +1,38 @@
+tasks.register("turnOnTheCar") {
+    doLast {
+        println("turnOnTheCar")
+    }
+}
+
+tasks.register("accelerateTheCar") {
+    dependsOn("turnOnTheCar")
+    finalizedBy("speedUp")
+    doLast {
+        println("accelerateTheCar")
+    }
+}
+
+tasks.register("taskAfterDefaultTask") {
+    dependsOn("projects")
+    doLast {
+        println("taskAfterDefaultTask")
+    }
+}
+
+tasks.register("speedUp") {
+    doLast {
+        println("speedUp")
+    }
+}
+
+tasks.register("turnOnTheRadio") {
+    mustRunAfter("turnOnTheCar")
+    doLast {
+        println("turnOnTheRadio")
+    }
+}
+
+tasks.register("driveCrazy") {
+    dependsOn("turnOnTheRadio", "accelerateTheCar")
+}
+

@@ -1,0 +1,37 @@
+plugins {
+    id("application")
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testImplementation("junit:junit:4.13")
+}
+
+application {
+    mainClass.set("Task.Types.App")
+}
+
+tasks.register("deleteBuild", Delete::class) {
+    mustRunAfter("copyBuild", "zipReleaseToTestTeam")
+    delete("build")
+}
+
+tasks.register("copyBuild", Copy::class) {
+    from("build")
+    into("../Release")
+}
+
+tasks.register("zipReleaseToTestTeam", Zip::class) {
+    baseName = "ExecutableToTestTeam"
+    destinationDir = file("../ExecutableToTestTeam")
+    from("build/distributions")
+}
+
+tasks.register("generateRelease") {
+    dependsOn("build", "test")
+    finalizedBy("copyBuild", "zipReleaseToTestTeam", "deleteBuild")
+}
+
