@@ -1,4 +1,4 @@
-package tech.Matheus.credit.requestsystem
+package tech.Matheus.Credit.RequestSystem
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

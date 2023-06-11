@@ -1,4 +1,4 @@
-package tech.Matheus.credit.requestsystem
+package tech.Matheus.Credit.RequestSystem
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
